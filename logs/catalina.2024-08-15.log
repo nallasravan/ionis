@@ -1,0 +1,147 @@
+15-Aug-2024 07:19:31.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.93
+15-Aug-2024 07:19:31.572 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 2 2024 21:24:59 UTC
+15-Aug-2024 07:19:31.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.93.0
+15-Aug-2024 07:19:31.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+15-Aug-2024 07:19:31.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+15-Aug-2024 07:19:31.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+15-Aug-2024 07:19:31.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_211
+15-Aug-2024 07:19:31.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_211-b12
+15-Aug-2024 07:19:31.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+15-Aug-2024 07:19:31.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93
+15-Aug-2024 07:19:31.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93
+15-Aug-2024 07:19:31.635 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\conf\logging.properties
+15-Aug-2024 07:19:31.673 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Aug-2024 07:19:31.721 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+15-Aug-2024 07:19:31.781 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Aug-2024 07:19:31.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+15-Aug-2024 07:19:31.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93
+15-Aug-2024 07:19:31.844 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93
+15-Aug-2024 07:19:31.844 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\temp
+15-Aug-2024 07:19:31.989 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+15-Aug-2024 07:19:32.001 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+15-Aug-2024 07:19:32.007 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+15-Aug-2024 07:19:32.082 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+15-Aug-2024 07:19:33.266 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+15-Aug-2024 07:19:33.324 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1027)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:525)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:990)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:686)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:709)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use: bind
+		at sun.nio.ch.Net.bind0(Native Method)
+		at sun.nio.ch.Net.bind(Unknown Source)
+		at sun.nio.ch.Net.bind(Unknown Source)
+		at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:268)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:223)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1373)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1386)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:662)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1025)
+		... 13 more
+15-Aug-2024 07:19:33.331 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [2218] milliseconds
+15-Aug-2024 07:19:33.408 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Aug-2024 07:19:33.448 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.93]
+15-Aug-2024 07:19:33.501 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\docs]
+15-Aug-2024 07:19:34.093 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Aug-2024 07:19:34.930 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [756] milliseconds.
+15-Aug-2024 07:19:34.994 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\docs] has finished in [1,493] ms
+15-Aug-2024 07:19:35.026 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\examples]
+15-Aug-2024 07:19:38.273 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Aug-2024 07:19:38.719 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\examples] has finished in [3,693] ms
+15-Aug-2024 07:19:38.738 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\host-manager]
+15-Aug-2024 07:19:39.177 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Aug-2024 07:19:39.215 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\host-manager] has finished in [476] ms
+15-Aug-2024 07:19:39.225 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\ionis]
+15-Aug-2024 07:19:39.509 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Aug-2024 07:19:39.582 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\ionis] has finished in [356] ms
+15-Aug-2024 07:19:39.605 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\manager]
+15-Aug-2024 07:19:41.472 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Aug-2024 07:19:41.518 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\manager] has finished in [1,917] ms
+15-Aug-2024 07:19:41.520 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\ROOT]
+15-Aug-2024 07:19:42.305 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Aug-2024 07:19:42.430 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\ROOT] has finished in [910] ms
+15-Aug-2024 07:19:42.465 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [9131] milliseconds
+15-Aug-2024 07:19:43.693 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8004] (base port [8004] and offset [0])
+	java.net.BindException: Address already in use: JVM_Bind
+		at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketBind(Unknown Source)
+		at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+		at java.net.PlainSocketImpl.bind(Unknown Source)
+		at java.net.ServerSocket.bind(Unknown Source)
+		at java.net.ServerSocket.<init>(Unknown Source)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:541)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:825)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:773)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+		at java.lang.reflect.Method.invoke(Unknown Source)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+15-Aug-2024 07:19:43.796 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+15-Aug-2024 07:19:43.865 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+15-Aug-2024 07:19:44.032 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+15-Aug-2024 07:19:44.111 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+15-Aug-2024 10:18:18.669 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.93
+15-Aug-2024 10:18:18.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Aug 2 2024 21:24:59 UTC
+15-Aug-2024 10:18:18.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.93.0
+15-Aug-2024 10:18:18.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+15-Aug-2024 10:18:18.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+15-Aug-2024 10:18:18.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+15-Aug-2024 10:18:18.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jre1.8.0_211
+15-Aug-2024 10:18:18.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_211-b12
+15-Aug-2024 10:18:18.704 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+15-Aug-2024 10:18:18.705 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93
+15-Aug-2024 10:18:18.706 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93
+15-Aug-2024 10:18:18.753 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\conf\logging.properties
+15-Aug-2024 10:18:18.753 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+15-Aug-2024 10:18:18.754 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+15-Aug-2024 10:18:18.754 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+15-Aug-2024 10:18:18.754 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+15-Aug-2024 10:18:18.754 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93
+15-Aug-2024 10:18:18.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93
+15-Aug-2024 10:18:18.756 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\temp
+15-Aug-2024 10:18:18.900 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+15-Aug-2024 10:18:18.900 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+15-Aug-2024 10:18:18.900 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+15-Aug-2024 10:18:19.337 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+15-Aug-2024 10:18:22.596 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+15-Aug-2024 10:18:22.813 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [5577] milliseconds
+15-Aug-2024 10:18:23.226 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+15-Aug-2024 10:18:23.236 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.93]
+15-Aug-2024 10:18:23.365 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\docs]
+15-Aug-2024 10:18:25.103 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Aug-2024 10:18:27.294 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,953] milliseconds.
+15-Aug-2024 10:18:27.828 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\docs] has finished in [4,463] ms
+15-Aug-2024 10:18:27.828 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\examples]
+15-Aug-2024 10:18:34.065 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Aug-2024 10:18:34.303 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\examples] has finished in [6,475] ms
+15-Aug-2024 10:18:34.303 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\host-manager]
+15-Aug-2024 10:18:34.717 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Aug-2024 10:18:34.748 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\host-manager] has finished in [445] ms
+15-Aug-2024 10:18:34.748 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\ionis]
+15-Aug-2024 10:18:35.056 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Aug-2024 10:18:35.153 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\ionis] has finished in [405] ms
+15-Aug-2024 10:18:35.153 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\manager]
+15-Aug-2024 10:18:35.653 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Aug-2024 10:18:35.671 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\manager] has finished in [518] ms
+15-Aug-2024 10:18:35.671 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\ROOT]
+15-Aug-2024 10:18:36.514 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15-Aug-2024 10:18:36.531 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ko176t9\OneDrive - Kohler Co\Desktop\apache-tomcat-9.0.93\webapps\ROOT] has finished in [860] ms
+15-Aug-2024 10:18:36.547 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+15-Aug-2024 10:18:36.888 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [14071] milliseconds
+15-Aug-2024 10:21:17.679 INFO [http-nio-8080-exec-1] org.apache.tomcat.util.http.parser.Cookie.logInvalidHeader A cookie header was received [recents_United States=njsnxjnx,toil;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
